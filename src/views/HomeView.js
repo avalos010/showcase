@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
-import Header   from "./../components/Header/Header";
+import Menu     from "./../components/Header/Menu";
+
+// import Header   from "./../components/Header/Header";
 import Cell     from "./../components/Cell/Cell";
 import { Grid } from "mauerwerk";
 import _        from "lodash";
@@ -99,8 +101,9 @@ class HomeView extends Component {
 
       <div className="main">
 
+        <Menu />
 
-
+{/*
         <Header
           {...this.state}
           search={this.search}
@@ -109,7 +112,7 @@ class HomeView extends Component {
           setMargin={this.setMargin}
           setHeight={this.setHeight}
         />
-
+ */}
 
 
 
@@ -135,6 +138,7 @@ class HomeView extends Component {
                 open={open}
                 toggle={toggle}
                 id={this.getId(data.name)}
+                type='grocery-list'
               />
           )}
         </Grid>
